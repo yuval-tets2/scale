@@ -20,6 +20,7 @@ model User {
 
 model Customer {
   createdAt DateTime @default(now())
+  email     String?
   firstName String?
   id        String   @id @default(cuid())
   lAstName  String?
